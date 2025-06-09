@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="120" viewBox="0 0 40 120" xmlns="http://www.w3.org/2000/svg">
+    <!-- Lamp Base -->
+    <path d="M10 110 L30 110 L28 120 L12 120 Z" fill="#4A4A4A"/>
+    
+    <!-- Lamp Stand -->
+    <path d="M18 30 L22 30 L22 110 L18 110 Z" fill="#9E9E9E"/>
+    
+    <!-- Lamp Shade -->
+    <path d="M5 20 L35 20 L30 35 L10 35 Z" fill="#E0E0E0"/>
+    <path d="M10 15 L30 15 L35 20 L5 20 Z" fill="#BDBDBD"/>
+    
+    <!-- Light Bulb -->
+    <circle cx="20" cy="25" r="3" fill="#FFF176"/>
+    
+    <!-- Highlights -->
+    <path d="M10 15 L30 15 L30 17 L10 17 Z" fill="#FFFFFF" opacity="0.3"/>
+    <path d="M18 30 L22 30 L22 32 L18 32 Z" fill="#FFFFFF" opacity="0.2"/>
+</svg> 

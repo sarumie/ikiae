@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="120" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
+    <!-- Rug Base -->
+    <path d="M20 20 L140 20 L130 100 L30 100 Z" fill="#B39DDB"/>
+    
+    <!-- Rug Pattern -->
+    <path d="M30 30 L130 30 L122 90 L38 90 Z" fill="#9575CD" opacity="0.7"/>
+    <path d="M40 40 L120 40 L114 80 L46 80 Z" fill="#7E57C2" opacity="0.5"/>
+    
+    <!-- Border Pattern -->
+    <path d="M20 20 L140 20 L138 25 L22 25 Z" fill="#7E57C2"/>
+    <path d="M30 95 L130 95 L130 100 L30 100 Z" fill="#7E57C2"/>
+    
+    <!-- Corner Details -->
+    <circle cx="30" cy="30" r="5" fill="#673AB7"/>
+    <circle cx="130" cy="30" r="5" fill="#673AB7"/>
+    <circle cx="38" cy="90" r="5" fill="#673AB7"/>
+    <circle cx="122" cy="90" r="5" fill="#673AB7"/>
+</svg> 

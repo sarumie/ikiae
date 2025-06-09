@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+    <!-- Sofa Base -->
+    <path d="M20 50 L140 50 L135 60 L25 60 Z" fill="#4A4A4A"/>
+    
+    <!-- Sofa Seat -->
+    <path d="M15 40 L145 40 L140 50 L20 50 Z" fill="#5C6BC0"/>
+    
+    <!-- Sofa Back -->
+    <path d="M15 15 L25 10 L25 40 L15 40 Z" fill="#7986CB"/>
+    <path d="M25 10 L145 10 L145 40 L25 40 Z" fill="#3F51B5"/>
+    
+    <!-- Sofa Arms -->
+    <path d="M15 15 L25 10 L25 40 L15 40 Z" fill="#7986CB"/>
+    <path d="M135 15 L145 10 L145 40 L135 40 Z" fill="#7986CB"/>
+    
+    <!-- Sofa Legs -->
+    <path d="M25 60 L20 70 L15 70 L20 60 Z" fill="#333333"/>
+    <path d="M135 60 L140 70 L145 70 L140 60 Z" fill="#333333"/>
+    
+    <!-- Cushions -->
+    <path d="M30 35 L70 35 L68 45 L32 45 Z" fill="#9FA8DA"/>
+    <path d="M80 35 L120 35 L118 45 L82 45 Z" fill="#9FA8DA"/>
+    
+    <!-- Highlights -->
+    <path d="M25 10 L145 10 L145 15 L25 15 Z" fill="#C5CAE9" opacity="0.3"/>
+    <path d="M15 40 L145 40 L145 42 L15 42 Z" fill="#FFFFFF" opacity="0.2"/>
+</svg> 

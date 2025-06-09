@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKIAE - Checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <!-- start header -->  
+    <div class="company-logo">
+        <img src="pic/IKIAElogo.png" alt="IKIAE">
+        <span class="company-name">IKIAE®</span>
+    </div>
+    <div class="header-controls">
+        <a href="checkout.html" class="header-btn cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">1</span>
+        </a>
+        <a href="login.html" class="header-btn">
+            <i class="fas fa-user"></i>
+        </a>
+        <div class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="switch">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-nav">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Shopping Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container checkout-container">
+        <div class="row">
+            <!-- Shopping Cart Section -->
+            <div class="col-lg-8">
+                <div class="shopping-cart">
+                    <h2>Shopping bag (1)</h2>
+                    <div class="postal-code">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Your postal code: </span>
+                        <input type="text" value="32789" class="postal-input">
+                        <button class="edit-btn">Edit</button>
+                    </div>
+
+                    <!-- Cart Items -->
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="pic/product1.jpg" alt="Product">
+                            </div>
+                            <div class="item-details">
+                                <h3>White Vase</h3>
+                                <p>Modern ceramic vase, White</p>
+                                <div class="item-controls">
+                                    <div class="quantity-control">
+                                        <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                                        <input type="number" value="1" min="1" class="qty-input">
+                                        <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="item-actions">
+                                        <button class="action-btn"><i class="far fa-heart"></i> Save for later</button>
+                                        <button class="action-btn"><i class="fas fa-trash"></i> Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <span class="price">Rp 670.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary Section -->
+            <div class="col-lg-4">
+                <div class="order-summary">
+                    <h2>Order summary</h2>
+                    
+                    <div class="discount-code">
+                        <button class="collapse-btn" data-toggle="collapse" data-target="#discountForm">
+                            Use a discount code <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="discountForm" class="collapse">
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter code">
+                                <button class="apply-btn">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-details">
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <span>Rp 670.000</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Delivery cost</span>
+                            <span>Rp 75.000</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total (Excl. tax)</span>
+                            <span>Rp 745.000</span>
+                        </div>
+                    </div>
+
+                    <div class="account-prompt">
+                        <h3>Have an account?</h3>
+                        <p><a href="login.html">Join or log in</a> for a smoother checkout.</p>
+                    </div>
+
+                    <button class="checkout-btn">
+                        Continue to checkout <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="checkout-features">
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>365 days to change your mind</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure shopping with SSL data encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Scan QRIS to Pay</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="pic/qris.jpg" alt="QRIS QR Code" class="qris-image">
+                    <div class="payment-timer mt-3">
+                        <p>Payment will expire in: <span id="paymentTimer">15:00</span></p>
+                    </div>
+                    <div class="payment-instructions mt-3">
+                        <p>1. Open your mobile banking or e-wallet app</p>
+                        <p>2. Scan the QRIS code above</p>
+                        <p>3. Complete the payment</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="checkPaymentStatus">Check Payment Status</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html> 

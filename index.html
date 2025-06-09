@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- start header -->  
+    <div class="company-logo">
+        <img src="pic/IKIAElogo.png" alt="IKIAE">
+        <span class="company-name">IKIAE®</span>
+    </div>
+    <div class="header-controls">
+        <a href="checkout.html" class="header-btn cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">1</span>
+        </a>
+        <a href="login.html" class="header-btn">
+            <i class="fas fa-user"></i>
+        </a>
+        <div class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="switch">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+    </div>
+    <header id="header">
+        <ul class="navigation">
+            <li><a href="#shop">Home</a></li>
+            <li><a href="#features">Products</a></li>
+            <li><a href="./room-designer.html">Room Designer</a></li>
+            <li><a href="#team">About</a></li>
+        </ul>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Search products...">
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    
+    <!-- end header -->
+
+    <!-- start home  -->
+
+    <div class="big-bg" id="home">
+        <div class="bg-content">
+            <h1>Make Your Home Beautiful<br><span>With IKIAE® Furniture</span></h1>
+            <hr>
+            <p>
+                We make our products in the best shape for your happiness, <br> so we hope to build a bridge of trust with you.
+            </p>
+            <div class="bg-link">
+                <a href="#categories">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- end home  -->
+
+    <!-- start second section  -->
+
+
+    <div class="big-collection" id="categories">
+        <div class="collect-flex">
+            <div class="collect">
+                <div class="image">
+                    <img src="pic/chair4.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">chair</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="pic/chair5.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">decoration</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="pic/chair3.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">furniture</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="pic/bed.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">bed</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="pic/chair2.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">armchair</a>
+                </div>
+            </div>
+
+            <div class="collect">
+                <div class="image">
+                    <img src="pic/couch.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#">couch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end second section  -->
+
+
+    <!-- start section three  -->
+    
+
+    <div class="big-shop" id="shop">
+        <div class="shop-title">
+            <h2>
+                Crafted with Passion<br>Built for Your Lifestyle
+            </h2>
+            <p>
+                Where Design Meets Comfort, Every Piece Tells Your Story
+            </p>
+        </div>
+        <div class="shop-flex">
+            <div class="shop-one">
+
+                <div class="image-one">
+                    <img src="pic/furn1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>White Chair</h3>
+                            <section>
+                                <span>Furniture</span>
+                            </section>
+                            <p class="description">Elegant white chair with minimalist design, perfect for modern interiors.</p>
+                            <div class="link">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-shopping-bag"></i></button>
+                                <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-one">
+                    <img src="pic/furn2.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>Blue Chair</h3>
+                            <section>
+                                <span>Furniture</span>
+                            </section>
+                            <p class="description">Contemporary blue accent chair with comfortable cushioning.</p>
+                            <div class="link">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-shopping-bag"></i></button>
+                                <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="shop-one">
+
+                <div class="image-one">
+                    <img src="pic/furn3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>Black Chair</h3>
+                            <section>
+                                <span>Furniture</span>
+                            </section>
+                            <p class="description">Sleek black chair with ergonomic design for optimal comfort.</p>
+                            <div class="link">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-shopping-bag"></i></button>
+                                <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-one">
+                    <img src="pic/furn4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>White Lamp</h3>
+                            <section>
+                                <span>Furniture</span>
+                            </section>
+                            <p class="description">Modern white lamp with adjustable arm and warm lighting.</p>
+                            <div class="link">
+                                <button><i class="far fa-heart"></i></button>
+                                <button><i class="fas fa-shopping-bag"></i></button>
+                                <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="shop-two">
+                <img src="pic/furn6.jpg" alt="">
+                <div class="overlay">
+                    <div class="txt">
+                        <h3>Brown Chairs</h3>
+                        <section>
+                            <span>Furniture</span>
+                        </section>
+                        <p class="description">Set of premium brown chairs with classic design and durable construction.</p>
+                        <div class="link">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-shopping-bag"></i></button>
+                            <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end section three  -->
+   
+    <!-- start section four  -->
+
+
+    <div class="big-product" id="features">
+        <div class="product-title">
+            <p>
+                Special Offers
+            </p>
+            <h2>
+                Limited Time Deals
+            </h2>
+            <p>
+                Exclusive Discounts on Premium Furniture
+            </p>
+            <hr>
+        </div>
+        <div class="product-flex">
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product1.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            White vase
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 890.000</span>
+                            <span class="discounted-price">Rp 670.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>decoration</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product2.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            neon light
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 380.000</span>
+                            <span class="discounted-price">Rp 245.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>lighting</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product3.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            gray chair
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 1.150.000</span>
+                            <span class="discounted-price">Rp 820.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product4.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            cup holder
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 440.000</span>
+                            <span class="discounted-price">Rp 290.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>decoration</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product5.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            White vase
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 530.000</span>
+                            <span class="discounted-price">Rp 395.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>decoration</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product6.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            gray sofa
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 3.350.000</span>
+                            <span class="discounted-price">Rp 2.520.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product7.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            baby chair
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 2.450.000</span>
+                            <span class="discounted-price">Rp 1.830.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+
+            <div class="product-one">
+                <div class="product-image">
+                    <img src="pic/product8.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h4>
+                            read chair
+                        </h4>
+                    </div>
+                    <div class="right">
+                        <section class="price">
+                            <span class="original-price">Rp 2.290.000</span>
+                            <span class="discounted-price">Rp 1.750.000</span>
+                        </section>
+                    </div>
+                </div>
+                <article>furniture</article>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section four  -->
+
+    <!-- start section five -->
+
+    <div class="big-furn" id="new-arrival">
+        <div class="furn-title">
+            <h2>
+                Explore Our Curated Collection<br>of Premium Furniture
+            </h2>
+            <p>
+                Discover timeless pieces that transform your space into a masterpiece
+            </p>
+        </div>
+        <div class="big-part">
+            <img src="pic/bg_image.png" alt="">
+            <div class="text-inside couch-details">
+                <img src="pic/plus.png" alt="" class="plus">
+                <div class="text-box product-card">
+                    <div>
+                        <img src="pic/product6.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5>Modern Couch</h5>
+                        <p>Premium comfort meets elegant design. Perfect for your living space.</p>
+                        <div class="link">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-shopping-bag"></i></button>
+                            <button class="arrow-btn"><i class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-inside plant-details">
+                <img src="pic/plus.png" alt="" class="plus">
+                <div class="text-box product-card">
+                    <div>
+                        <img src="pic/olivetree.jpeg" alt="Olive Tree">
+                    </div>
+                    <div>
+                        <h5>Olive Tree</h5>
+                        <p>Bring nature indoors with our premium artificial plants. Perfect for any room.</p>
+                        <div class="link">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-shopping-bag"></i></button>
+                            <button class="arrow-btn"><i class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-inside lamp-details">
+                <img src="pic/plus.png" alt="" class="plus">
+                <div class="text-box product-card">
+                    <div>
+                        <img src="pic/modernlamp.png" alt="Modern Floor Lamp">
+                    </div>
+                    <div>
+                        <h5>Modern Floor Lamp</h5>
+                        <p>Sleek design with adjustable lighting. The perfect accent for your space.</p>
+                        <div class="link">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-shopping-bag"></i></button>
+                            <button class="arrow-btn"><i class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section five -->
+
+    <!-- start section six -->
+
+    <div class="bg-show">
+        <div class="link">
+            <a>play <i class="fas fa-play"></i></a>
+        </div>
+        <div class="overlay">
+            <div class="image">
+                <img src="pic/x.png" alt="" class="cancel">
+                <video src="furniture.mp4" id="video"></video>
+                <div class="bg-player">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end section six -->
+
+    <!-- start section seven  -->
+
+    <div class="bg-team" id="team">
+        <div class="team-title">
+            <section>our creative team</section>
+            <h2>Meet our team</h2>
+            <hr>
+        </div>
+        <div class="team-flex swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="team-one swiper-slide">
+                    <img src="pic/team1.jpg" alt="">
+                    <h4>Christian Emanuel Ikajaya</h4>
+                </div>
+                <div class="team-one swiper-slide">
+                    <img src="pic/team2.jpg" alt="">
+                    <h4>Farhandy Ramadhan</h4>
+                </div>
+                <div class="team-one swiper-slide">
+                    <img src="pic/team3.jpg" alt="">
+                    <h4>Sandy Raja Alamsyah</h4>
+                </div>
+                <div class="team-one swiper-slide">
+                    <img src="pic/team4.jpg" alt="">
+                    <h4>Takashi Yamamoto</h4>
+                </div>
+                <div class="team-one swiper-slide">
+                    <img src="pic/team6.jpg" alt="">
+                    <h4>Kenji Nakamura</h4>
+                </div>
+                <div class="team-one swiper-slide">
+                    <img src="pic/team7.jpg" alt="">
+                    <h4>Hiroshi Tanaka</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section seven  -->
+
+    <!-- start footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-content">
+                        <h3>About IKIAE</h3>
+                        <p>IKIAE is your trusted partner in creating beautiful living spaces. We believe in sustainable, affordable, and well-designed furniture that makes everyday life better.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-content">
+                        <h3>Helpful Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Shipping Information</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-content">
+                        <h3>Shopping With Us</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Student Discount</a></li>
+                            <li><a href="#">Design Services</a></li>
+                            <li><a href="#">Assembly Services</a></li>
+                            <li><a href="#">Bulk Purchase</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-content">
+                        <h3>Payment Methods</h3>
+                        <div class="payment-methods">
+                            <i class="fab fa-cc-visa fa-2x"></i>
+                            <i class="fab fa-cc-mastercard fa-2x"></i>
+                            <i class="fab fa-cc-amex fa-2x"></i>
+                            <i class="fab fa-cc-paypal fa-2x"></i>
+                            <i class="fab fa-cc-apple-pay fa-2x"></i>
+                            <i class="fab fa-cc-discover fa-2x"></i>
+                        </div>
+                        <div class="newsletter">
+                            <h4>Subscribe to Our Newsletter</h4>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="footer-bottom text-center">
+                        <p>&copy; 2024 IKIAE. All rights reserved. | Privacy Policy | Terms of Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- start scroll to top  -->
+    
+
+    <div class="top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+
+
+    <!-- end scroll to top  -->
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: true,
+        speed: 600,
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          991: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+
+
+
+
+   
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

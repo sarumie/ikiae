@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="160" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+    <!-- Bed Base -->
+    <path d="M20 100 L180 100 L175 120 L25 120 Z" fill="#4A4A4A"/>
+    
+    <!-- Mattress -->
+    <path d="M15 70 L185 70 L180 100 L20 100 Z" fill="#E0E0E0"/>
+    
+    <!-- Headboard -->
+    <path d="M15 20 L25 15 L25 70 L15 70 Z" fill="#78909C"/>
+    <path d="M25 15 L185 15 L185 70 L25 70 Z" fill="#546E7A"/>
+    
+    <!-- Bed Legs -->
+    <path d="M25 120 L20 140 L15 140 L20 120 Z" fill="#333333"/>
+    <path d="M175 120 L180 140 L185 140 L180 120 Z" fill="#333333"/>
+    
+    <!-- Pillows -->
+    <path d="M35 50 L85 50 L83 65 L37 65 Z" fill="#FFFFFF"/>
+    <path d="M95 50 L145 50 L143 65 L97 65 Z" fill="#FFFFFF"/>
+    
+    <!-- Blanket -->
+    <path d="M20 80 L180 80 L178 95 L22 95 Z" fill="#90A4AE"/>
+    
+    <!-- Highlights -->
+    <path d="M25 15 L185 15 L185 20 L25 20 Z" fill="#B0BEC5" opacity="0.3"/>
+    <path d="M15 70 L185 70 L185 72 L15 72 Z" fill="#FFFFFF" opacity="0.2"/>
+</svg> 

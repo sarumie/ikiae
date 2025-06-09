@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="80" viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pot Base -->
+    <path d="M15 60 L45 60 L42 70 L18 70 Z" fill="#795548"/>
+    
+    <!-- Pot Body -->
+    <path d="M10 40 L50 40 L45 60 L15 60 Z" fill="#8D6E63"/>
+    
+    <!-- Plant -->
+    <path d="M20 10 C25 5, 35 5, 40 10 C45 15, 45 25, 40 30 L30 40 L20 30 C15 25, 15 15, 20 10 Z" fill="#66BB6A"/>
+    <path d="M25 15 C30 10, 40 10, 45 15 C50 20, 50 30, 45 35 L35 45 L25 35 C20 30, 20 20, 25 15 Z" fill="#4CAF50"/>
+    <path d="M15 20 C20 15, 30 15, 35 20 C40 25, 40 35, 35 40 L25 50 L15 40 C10 35, 10 25, 15 20 Z" fill="#81C784"/>
+    
+    <!-- Soil -->
+    <path d="M15 40 L45 40 L42 45 L18 45 Z" fill="#5D4037"/>
+    
+    <!-- Highlights -->
+    <path d="M10 40 L50 40 L50 42 L10 42 Z" fill="#FFFFFF" opacity="0.2"/>
+</svg> 
