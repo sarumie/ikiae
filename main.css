@@ -255,7 +255,9 @@ header .navigation li a:hover {
   max-width: 900px;
   padding: 15px;
   margin: 0 auto;
+  width: 90%;
 }
+
 .big-bg .bg-content h1 {
   font-family: "Space Mono", monospace;
   font-size: 52px;
@@ -265,13 +267,15 @@ header .navigation li a:hover {
   line-height: 1.25;
   letter-spacing: 0.3px;
   color: var(--accent-color);
-  white-space: nowrap; /* Prevent unintended wrapping */
 }
 
-/* Add specific class for the second line */
+.big-bg .bg-content h1 br {
+  display: none;
+}
+
 .big-bg .bg-content h1 span {
   display: block;
-  white-space: nowrap;
+  margin-top: 10px;
 }
 
 .big-bg .bg-content p {
@@ -279,10 +283,15 @@ header .navigation li a:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  margin: 15px 0;
+  margin: 15px auto;
   color: var(--accent-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   letter-spacing: 0.2px;
+  max-width: 600px;
+}
+
+.big-bg .bg-content p br {
+  display: none;
 }
 
 .big-bg .bg-content hr {
@@ -293,9 +302,11 @@ header .navigation li a:hover {
   border: none;
   opacity: 0.9;
 }
+
 .big-bg .bg-content .bg-link {
   margin-top: 16px;
 }
+
 /* ADD THIS NEW CODE FOR THE GLASS BUTTON */
 
 .big-bg .bg-content .bg-link a {
@@ -331,53 +342,72 @@ header .navigation li a:hover {
 @media (max-width: 991px) {
   .big-bg .bg-content h1 {
     font-size: 42px;
-    margin-bottom: 12px;
   }
   .big-bg .bg-content p {
     font-size: 17px;
-    margin: 12px 0;
-  }
-  .big-bg .bg-content .bg-link a {
-    font-size: 15px;
+    margin: 12px auto;
   }
 }
 
 @media (max-width: 768px) {
+  .big-bg .bg-content {
+    width: 95%;
+  }
   .big-bg .bg-content h1 {
-    font-size: 38px;
-    line-height: 1.2;
+    font-size: 36px;
   }
   .big-bg .bg-content p {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.5;
+    margin: 12px auto;
   }
   .big-bg .bg-content hr {
-    margin: 18px auto;
-  }
-  .big-bg .bg-content .bg-link a {
-    font-size: 14px;
+    width: 40%;
+    margin: 15px auto;
   }
 }
 
 @media (max-width: 576px) {
   .big-bg .bg-content {
-    padding: 12px;
-    margin: 0 12px;
+    padding: 10px;
+    width: 100%;
   }
   .big-bg .bg-content h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
+  .big-bg .bg-content h1 span {
+    margin-top: 5px;
+  }
   .big-bg .bg-content p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.4;
-    margin: 10px 0;
+    margin: 10px auto;
+    padding: 0 15px;
   }
   .big-bg .bg-content hr {
-    width: 25%;
-    margin: 15px auto;
+    width: 50%;
+    margin: 12px auto;
   }
   .big-bg .bg-content .bg-link a {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .big-bg .bg-content h1 {
+    font-size: 24px;
+  }
+  .big-bg .bg-content h1 span {
+    font-size: 22px;
+  }
+  .big-bg .bg-content p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .big-bg .bg-content .bg-link a {
+    padding: 8px 20px;
     font-size: 13px;
   }
 }
