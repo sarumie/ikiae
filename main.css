@@ -597,22 +597,25 @@ header .navigation li a:hover {
   align-items: center;
   padding: 0px 20px;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .shop-flex .overlay .txt {
   color: #ffdb00;
   position: relative;
   padding: 20px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   width: 90%;
   margin: 0 auto;
-  min-height: 200px; /* Ensure minimum height for content */
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
 }
 
 .shop-flex .overlay .txt h3 {
@@ -695,53 +698,16 @@ header .navigation li a:hover {
   transform: translateX(5px);
 }
 
-.shop-flex .image-one:hover .txt {
-  animation: job1 0.7s ease-in-out forwards;
-}
-
-.shop-flex .image-one:hover .link {
-  animation: job1_link 0.7s ease-in-out forwards;
-}
-.shop-flex .image-one:hover .overlay {
-  opacity: 1;
-}
-
-.shop-flex .shop-two {
-  position: relative;
-  height: 100%;
-}
-
-.shop-flex .shop-two:hover .txt {
-  animation: job1 0.7s ease-in-out forwards;
-}
-
-.shop-flex .shop-two:hover .link {
-  animation: job1_link 0.7s ease-in-out forwards;
-}
+.shop-flex .image-one:hover .overlay,
 .shop-flex .shop-two:hover .overlay {
   opacity: 1;
+  visibility: visible;
 }
 
-@keyframes job1 {
-  0% {
-    opacity: 0;
-    margin-bottom: 70px;
-  }
-  100% {
-    opacity: 1;
-    margin-bottom: 0px;
-  }
-}
-
-@keyframes job1_link {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
+.shop-flex .image-one:hover .txt,
+.shop-flex .shop-two:hover .txt {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* media  */
