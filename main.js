@@ -38,9 +38,17 @@ document.addEventListener("DOMContentLoaded", () => {
   function setupProductCards() {
     const productSections = document.querySelectorAll(".text-inside");
 
+    if (productSections.length === 0) {
+      return; // Elements don't exist on this page
+    }
+
     productSections.forEach((section) => {
       const plus = section.querySelector(".plus");
       const textBox = section.querySelector(".text-box");
+
+      if (!plus || !textBox) {
+        return; // Required elements not found in this section
+      }
 
       plus.onclick = () => {
         document.querySelectorAll(".text-box.active").forEach((box) => {
@@ -62,6 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function setupScrollToTop() {
     const top = document.querySelector(".top");
 
+    if (!top) {
+      return; // Element doesn't exist on this page
+    }
+
     window.addEventListener("scroll", () => {
       top.style.display = window.scrollY > 100 ? "block" : "none";
     });
@@ -80,6 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const videoCancel = document.querySelector(".bg-show .cancel");
     const video = document.querySelector("#video");
     const videoPlayer = document.querySelector(".bg-player");
+
+    // Only setup video functionality if elements exist (for index.html)
+    if (!videoLink || !videoOverlay || !videoCancel || !video || !videoPlayer) {
+      return; // Elements don't exist on this page
+    }
 
     videoLink.addEventListener("click", (e) => {
       e.preventDefault();
@@ -115,6 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setupThemeSwitcher() {
     const themeToggle = document.getElementById("theme-toggle");
+
+    if (!themeToggle) {
+      return; // Theme toggle doesn't exist on this page
+    }
+
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
@@ -140,6 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBox = document.querySelector(".search-box");
     const searchClose = document.querySelector(".search-close");
     const searchInput = document.querySelector(".search-box input");
+
+    if (!searchBtn || !searchBox || !searchClose || !searchInput) {
+      return; // Search elements don't exist on this page
+    }
 
     searchBtn.addEventListener("click", () => {
       searchBox.classList.add("active");
@@ -171,20 +197,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function setupSmoothScroll() {
-    document
-      .querySelector(".bg-link a")
-      .addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href");
-        const targetSection = document.querySelector(targetId);
-        const headerHeight = document.querySelector("#header").offsetHeight;
-        const offset = 50;
+    const bgLink = document.querySelector(".bg-link a");
 
-        window.scrollTo({
-          top: targetSection.offsetTop - headerHeight - offset,
-          behavior: "smooth",
-        });
+    // Only setup smooth scroll if element exists (for index.html)
+    if (!bgLink) {
+      return; // Element doesn't exist on this page
+    }
+
+    bgLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+      const headerHeight = document.querySelector("#header").offsetHeight;
+      const offset = 50;
+
+      window.scrollTo({
+        top: targetSection.offsetTop - headerHeight - offset,
+        behavior: "smooth",
       });
+    });
   }
 
   // Mobile Menu Functionality

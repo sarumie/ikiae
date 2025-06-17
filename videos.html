@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos - IKIAE® Furniture Showcase</title>
+    <link rel="icon" type="image/png" href="pic/IKIAElogo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="videos.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="company-logo">
+      <img src="pic/IKIAElogo.png" alt="IKIAE" />
+      <span class="company-name">IKIAE®</span>
+    </div>
+    <div class="header-controls">
+      <a href="checkout.html" class="header-btn cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">1</span>
+      </a>
+      <a href="login.html" class="header-btn">
+        <i class="fas fa-user"></i>
+      </a>
+      <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="switch">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </label>
+      </div>
+    </div>
+    <header id="header">
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#features">Products</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+        <li><a href="index.html#team">About</a></li>
+      </ul>
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" placeholder="Search products..." />
+          <button class="search-close"><i class="fas fa-times"></i></button>
+        </div>
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close"><i class="fas fa-times"></i></button>
+      <ul class="mobile-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#features">Products</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="index.html#team">About</a></li>
+      </ul>
+    </div>
+
+    <!-- end header -->
+
+    <!-- start videos showcase -->
+    <div class="videos-showcase">
+      <div class="videos-title">
+        <h1>Showcase of Our Furniture</h1>
+        <p>Experience the Beauty and Craftsmanship of Our Premium Collection</p>
+      </div>
+
+      <div class="videos-container">
+        <div class="video-carousel">
+          <!-- Video Player Container -->
+          <div class="video-player-wrapper">
+            <div class="video-slide active" data-video="0">
+              <video id="video-0" preload="none">
+                <source src="" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-slide" data-video="1">
+              <video id="video-1" preload="none">
+                <source src="" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-slide" data-video="2">
+              <video id="video-2" preload="none">
+                <source src="" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Video Player Controls Overlay -->
+            <div class="video-controls-overlay" id="videoControlsOverlay">
+              <!-- Center Play/Pause Button -->
+              <div class="center-controls">
+                <button class="center-play-btn" id="centerPlayBtn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+
+              <!-- Bottom Controls -->
+              <div class="bottom-controls">
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                  <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-handle" id="progressHandle"></div>
+                  </div>
+                  <div class="time-display">
+                    <span id="currentTime">0:00</span> /
+                    <span id="totalTime">0:00</span>
+                  </div>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="control-buttons">
+                  <button
+                    class="control-btn"
+                    id="backwardBtn"
+                    title="Backward 5s"
+                  >
+                    <i class="fas fa-backward"></i>
+                    <span>5</span>
+                  </button>
+                  <button class="control-btn play-pause-btn" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    class="control-btn"
+                    id="forwardBtn"
+                    title="Forward 5s"
+                  >
+                    <i class="fas fa-forward"></i>
+                    <span>5</span>
+                  </button>
+                  <button class="control-btn" id="muteBtn" title="Mute/Unmute">
+                    <i class="fas fa-volume-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Controls - Now Outside Player -->
+          <div class="video-nav-controls">
+            <button class="nav-btn prev-btn" id="prevBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next-btn" id="nextBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Video Indicators -->
+          <div class="video-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+          </div>
+        </div>
+
+        <!-- Video Info - Now Below Player -->
+        <div class="video-info-container">
+          <div class="video-info" id="videoInfo">
+            <h3 id="videoTitle">Modern Living Collection</h3>
+            <p id="videoDescription">
+              Discover our contemporary furniture pieces designed for modern
+              lifestyles
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end videos showcase -->
+
+    <!-- start scroll to top -->
+    <div class="top">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- end scroll to top -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="videos.js"></script>
+  </body>
+</html>
