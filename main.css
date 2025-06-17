@@ -154,6 +154,8 @@ header .navigation li a:hover {
   padding: 8px;
   font-size: 16px;
   transition: all 0.3s ease;
+  z-index: 1112;
+  position: relative;
 }
 
 .search-btn:hover {
@@ -161,28 +163,29 @@ header .navigation li a:hover {
 }
 
 .search-box {
-  position: absolute;
-  right: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.15);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
-  padding: 6px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  padding: 8px 25px;
   display: flex;
   align-items: center;
-  width: 0;
-  overflow: hidden;
+  width: 400px;
   opacity: 0;
-  transition: all 0.3s ease;
-  margin-right: 10px;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 1110;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .search-box.active {
-  width: 250px;
   opacity: 1;
+  visibility: visible;
 }
 
 .search-box input {
@@ -190,9 +193,9 @@ header .navigation li a:hover {
   border: none;
   outline: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
-  padding: 5px;
+  padding: 8px 15px;
 }
 
 .search-box input::placeholder {
@@ -204,14 +207,35 @@ header .navigation li a:hover {
   border: none;
   color: #fff;
   cursor: pointer;
-  padding: 5px;
-  font-size: 14px;
+  padding: 8px;
+  font-size: 16px;
   opacity: 0.7;
   transition: all 0.3s ease;
+  margin-left: 10px;
 }
 
 .search-box .search-close:hover {
   opacity: 1;
+}
+
+/* Hide navigation when search is active */
+header.search-active .navigation {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Hide mobile menu button when search is active */
+header.search-active .mobile-menu-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Ensure search button remains visible */
+header.search-active .search-container {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Dark mode styles for search */
@@ -222,14 +246,24 @@ header .navigation li a:hover {
 
 /* Media Queries for Search */
 @media (max-width: 768px) {
-  .search-box.active {
-    width: 200px;
+  .search-box {
+    width: 300px;
+    padding: 6px 20px;
+  }
+  .search-box input {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 
 @media (max-width: 576px) {
-  .search-box.active {
-    width: 150px;
+  .search-box {
+    width: 250px;
+    padding: 6px 15px;
+  }
+  .search-box input {
+    font-size: 14px;
+    padding: 6px 10px;
   }
   .search-container {
     margin-left: 10px;
@@ -578,6 +612,7 @@ header .navigation li a:hover {
 }
 .shop-flex .shop-two {
   width: 44%;
+  position: relative;
 }
 .shop-flex .image-one {
   position: relative;

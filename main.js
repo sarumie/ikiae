@@ -162,14 +162,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBox = document.querySelector(".search-box");
     const searchClose = document.querySelector(".search-close");
     const searchInput = document.querySelector(".search-box input");
+    const header = document.querySelector("#header");
 
-    if (!searchBtn || !searchBox || !searchClose || !searchInput) {
+    if (!searchBtn || !searchBox || !searchClose || !searchInput || !header) {
       return; // Search elements don't exist on this page
     }
 
-    searchBtn.addEventListener("click", () => {
-      searchBox.classList.add("active");
-      searchInput.focus();
+    searchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      openSearch();
     });
 
     searchClose.addEventListener("click", closeSearch);
@@ -190,7 +191,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    function openSearch() {
+      header.classList.add("search-active");
+      searchBox.classList.add("active");
+      // Small delay to ensure the search box is visible before focusing
+      setTimeout(() => {
+        searchInput.focus();
+      }, 100);
+    }
+
     function closeSearch() {
+      header.classList.remove("search-active");
       searchBox.classList.remove("active");
       searchInput.value = "";
     }
